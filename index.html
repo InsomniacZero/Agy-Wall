@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ASCII Wallpapers for Antigravity</title>
-<meta name="description" content="23 live, animated backgrounds for the Antigravity desktop app, drawn entirely in text characters.">
-<meta property="og:title" content="ASCII Wallpapers for Antigravity">
+<title>Insom Agy Wall Project</title>
+<meta name="description" content="Insom Agy Wall Project - 23 live, animated backgrounds for the Antigravity desktop app, drawn entirely in text characters.">
+<meta property="og:title" content="Insom Agy Wall Project">
 <meta property="og:description" content="23 live, animated backgrounds for Antigravity, drawn entirely in text characters.">
-<meta property="og:image" content="https://mix4o445.github.io/antigravity-ascii-wallpapers/assets/poster.jpg">
+<meta property="og:image" content="assets/poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -51,12 +51,12 @@ footer{padding:88px 0 56px;text-align:center;color:var(--muted);font-size:14px}
 <body>
 <div class="wrap">
 <header>
-  <h1>ASCII Wallpapers</h1>
-  <p class="sub">for Antigravity</p>
+  <h1>Insom Agy Wall Project</h1>
+  <p class="sub">Dynamic ASCII Wallpapers for Antigravity</p>
   <p class="lede">23 live, animated backgrounds for the Antigravity desktop app, painted entirely in text characters.</p>
   <div class="cta">
-    <a class="btn primary" href="https://github.com/Mix4o445/antigravity-ascii-wallpapers/archive/refs/heads/main.zip">Download</a>
-    <a class="btn" href="https://github.com/Mix4o445/antigravity-ascii-wallpapers">View on GitHub</a>
+    <a class="btn primary" href="https://github.com/InsomniacZero/Agy-Wall/releases/latest/download/insom-agy-wall-project.zip">Download ZIP</a>
+    <a class="btn" href="https://github.com/InsomniacZero/Agy-Wall">View on GitHub</a>
   </div>
   <div class="video"><video src="assets/demo.mp4" poster="assets/poster.jpg" controls playsinline preload="metadata"></video></div>
 </header>
@@ -88,17 +88,27 @@ footer{padding:88px 0 56px;text-align:center;color:var(--muted);font-size:14px}
 
 <section>
   <h2>Install</h2>
-  <p class="center">Windows, Antigravity <b>2.28.2</b>, and <a href="https://nodejs.org">Node.js</a> 18+.</p>
+  <p class="center">Cross-platform (Windows & Linux) · Antigravity <b>2.28.2</b> & <b>2.24.0</b> · Zero dependencies with bundled Node fallback.</p>
   <div class="steps">
-    <div class="step"><div class="num">1</div><div><p><a href="https://github.com/Mix4o445/antigravity-ascii-wallpapers/archive/refs/heads/main.zip">Download the ZIP</a> and extract it.</p></div></div>
+    <div class="step"><div class="num">1</div><div><p><a href="https://github.com/InsomniacZero/Agy-Wall/releases/latest/download/insom-agy-wall-project.zip">Download the ZIP</a> (or clone from GitHub) and extract it.</p></div></div>
     <div class="step"><div class="num">2</div><div><p>Close Antigravity completely.</p></div></div>
-    <div class="step"><div class="num">3</div><div><p>Open PowerShell in the extracted folder and run:</p><pre>node .\manage-wallpapers.cjs install</pre></div></div>
-    <div class="step"><div class="num">4</div><div><p>Reopen Antigravity and click <b>Themes</b>. To uninstall later, close the app and run:</p><pre>node .\manage-wallpapers.cjs restore</pre></div></div>
+    <div class="step"><div class="num">3</div><div><p>Launch the installer for your operating system:</p>
+      <p><b>Windows:</b> Double-click <code>install.bat</code> or run <code>.\install.ps1</code>.</p>
+      <p><b>Linux:</b> Run <code>./install.sh</code> (or double-click it in your file manager).</p>
+      <p><b>CLI:</b></p>
+      <pre>node manage-wallpapers.cjs install</pre>
+    </div></div>
+    <div class="step"><div class="num">4</div><div><p>Reopen Antigravity and click <b>Themes</b> in the top right. To uninstall later, close the app and run:</p>
+      <p><b>Windows:</b> Double-click <code>uninstall.bat</code></p>
+      <p><b>Linux:</b> Run <code>./uninstall.sh</code></p>
+      <p><b>CLI:</b></p>
+      <pre>node manage-wallpapers.cjs restore</pre>
+    </div></div>
   </div>
-  <p class="note">Unofficial community mod, not affiliated with or endorsed by Google. The installer patches your local app archive only after verifying its exact SHA-256, keeps a backup, and refuses to touch any other build. App updates remove the mod.</p>
+  <p class="note">Unofficial community mod, not affiliated with or endorsed by Google. The installer patches your local app archive only after verifying its exact SHA-256, keeps an automated backup, and supports instant restore. View the project source code on <a href="https://github.com/InsomniacZero/Agy-Wall">GitHub</a>.</p>
 </section>
 
-<footer>MIT licensed · Demo music: "Uplifting Bass" by Lily J and sound effects from <a href="https://mixkit.co">Mixkit</a></footer>
+<footer>MIT licensed · <a href="https://github.com/InsomniacZero/Agy-Wall">Insom Agy Wall Project on GitHub</a> · Demo music: "Uplifting Bass" by Lily J and sound effects from <a href="https://mixkit.co">Mixkit</a></footer>
 </div>
 </body>
 </html>

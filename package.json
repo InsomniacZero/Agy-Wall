@@ -1,0 +1,31 @@
+{
+  "name": "insom-agy-wall-project",
+  "version": "1.0.0",
+  "description": "Live, animated ASCII wallpapers for the Google Antigravity desktop application",
+  "main": "manage-wallpapers.cjs",
+  "scripts": {
+    "package": "node scripts/package-release.cjs",
+    "verify": "node manage-wallpapers.cjs verify",
+    "test": "node manage-wallpapers.cjs verify",
+    "install-mod": "node manage-wallpapers.cjs install",
+    "restore": "node manage-wallpapers.cjs restore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InsomniacZero/Agy-Wall.git"
+  },
+  "keywords": [
+    "antigravity",
+    "ascii",
+    "wallpapers",
+    "themes",
+    "electron",
+    "customization"
+  ],
+  "author": "InsomniacZero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InsomniacZero/Agy-Wall/issues"
+  },
+  "homepage": "https://github.com/InsomniacZero/Agy-Wall#readme"
+}
